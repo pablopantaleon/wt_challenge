@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/row_padding">
+
+    <ImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/image_height"
+        android:layout_height="@dimen/image_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@tools:sample/avatars"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:gravity="bottom"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/cover"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/author"
+        tools:src="This is title!"/>
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textColor="@android:color/black"
+        android:gravity="top"
+        android:textSize="@dimen/author_text_size"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toRightOf="@id/cover"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="This is an author!"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

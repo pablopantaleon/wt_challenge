@@ -1,0 +1,6 @@
+module Pods_wt_code_challenge {
+  umbrella header "Pods-wt_code_challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

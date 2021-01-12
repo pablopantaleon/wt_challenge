@@ -1,0 +1,12 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'wt_code_challenge' do
+  
+  pod 'Alamofire', '~> 5.2'
+  
+  # unnecessary 3rd party library, but it the performance regarding
+  # to the network image stuff is great
+  pod 'Kingfisher'
+
+end
